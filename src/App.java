@@ -31,11 +31,44 @@ public class App {
         try {
             System.err.print("Por favor, introduzca una hora del día (0 - 23): ");
             int hora_dia = Integer.parseInt(System.console().readLine());
+            switch (hora_dia) {
+                case 21, 22, 23, 24, 0, 1, 2, 3, 4, 5, 6 -> System.err.println("Buenasnoches");
+                case 7, 8, 9, 10, 11 -> System.err.println("Buenosdías");
+                case 12, 13, 14, 15, 16, 17, 18, 19, 20 -> System.err.println("Buenastardes");
+                default -> System.err.println("La hora introducida no es correcta.");
+            }
+        
         } catch  (NumberFormatException e) {
             System.err.println("ERROR! Introduce un número!");
             
+        } catch (Exception e) {
+            System.err.println("ERROR! Ha ocurrido un error inesperado");
         }
 
+        System.err.printf("%n");
+// EJERCICIO 3
+    System.err.println(ut.GREEN_BOLD + "EJERCICIO 3" + ut.RESET);
+    System.err.println("""
+            scribe un programa en que dado un número del 1 a 7 escriba el correspondiente 
+            nombre del día de la semana.
+            """);
+        try{
+            System.err.print("Por favor, introduzca un úmero del 1 al 7: ");
+            int num_dia = Integer.parseInt(System.console().readLine());
+
+            switch (num_dia) {
+                case 1 -> System.err.println("Lunes");
+                case 2 -> System.err.println("Martes");
+                case 3 -> System.err.println("Miércoles");
+                case 4 -> System.err.println("Jueves");
+                case 5 -> System.err.println("Viernes");
+                case 6 -> System.err.println("Sabado");
+                case 7 -> System.err.println("Domingo");
+                default -> System.err.println("Día Incorrecto");
+            }
+        } catch (Exception e) {
+            System.err.println("Ha ocurrido un error inesperado");
+        }
 
     }
 }

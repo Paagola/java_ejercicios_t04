@@ -79,3 +79,30 @@ Realiza un programa que pida una hora por teclado y que muestre luego buenos dí
 >
 > La hora introducida no es correcta
 
+<br>
+
+---
+
+<br>
+
+## EJERCICIO 3
+
+Escribe un programa en que dado un número del 1 a 7 escriba el correspondiente nombre del día de la semana.
+
+### `Ejemplo 1`
+
+> Por favor, introduce el número del 1 al 7: 1
+>
+> lunes
+
+### `Ejemplo 2`
+
+> Por favor, introduce el número del 1 al 7: 3
+>
+> miércoles
+
+### `Ejemplo 3`
+
+> Por favor, introduce el número del 1 al 7: 6
+>
+> sábado
