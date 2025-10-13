@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
         
@@ -49,7 +51,7 @@ public class App {
 // EJERCICIO 3
     System.err.println(ut.GREEN_BOLD + "EJERCICIO 3" + ut.RESET);
     System.err.println("""
-            scribe un programa en que dado un número del 1 a 7 escriba el correspondiente 
+            Escribe un programa en que dado un número del 1 a 7 escriba el correspondiente 
             nombre del día de la semana.
             """);
         try{
@@ -66,9 +68,75 @@ public class App {
                 case 7 -> System.err.println("Domingo");
                 default -> System.err.println("Día Incorrecto");
             }
+        }
+
+         catch (NumberFormatException e) {
+             System.err.println("ERROR! Introduce un número!");
+
         } catch (Exception e) {
             System.err.println("Ha ocurrido un error inesperado");
         }
+        System.err.printf("%n%n");
+
+// EJERCICIO 5
+    System.err.println(ut.GREEN_BOLD + "EJERCICIO 5" + ut.RESET);
+    System.err.println("""
+            Realiza un programa que resuelva una ecuación de primer grado 
+            (del tipo ax + b = 0).
+            """);
+        System.err.println("Este programa resuelve ecuaciones de primer grado del tipo ax + b = 0");
+        try {
+            System.err.print("Por favor, introduzca el valor de a: ");
+            double valor_a = Double.parseDouble(System.console().readLine());
+            System.err.print("Ahora introduzca el valor de b: ");
+            double valor_b = Double.parseDouble(System.console().readLine());
+            
+            if (valor_a==0) {
+                System.err.println("No es una ecuación de primer grado");
+            } else {
+                double x = -valor_b / valor_a;
+                System.err.println("La ecuación es x = " + x);
+            } 
+        }
+        catch (NumberFormatException e) {
+            System.err.println("Error! Introduce un número!");
+        } catch (Exception e) {
+            System.err.println("Error inesperado!");
+        }
+// EJERCICIO 6
+    System.err.println(ut.GREEN_BOLD + "EJERCICIO 6" + ut.RESET);
+    System.err.println("""
+            Realiza un programa que calcule el tiempo que tardará en caer un objeto desde una altura h. 
+            Aplica la fórmula t = √2hg siendo g = 9.81m/s2
+            """);
+        Scanner s = new Scanner(System.in);
+            System.err.println("Cálculo del tiempo de caíde de un objeto.");
+            System.err.print("Por favor, introduzca la altura (en metro) desde la que cae el objeto: ");  
+        try {
+            double altura = s.nextDouble();
+            double tiempo = Math.sqrt((2*altura) / 9.81);
+            System.err.printf("El objeto tarda %.2f segundos en caer", tiempo);
+        } catch (NumberFormatException e) {
+            System.err.println("ERROR! Introduce un número!");
+        } catch (Exception e) {
+            System.err.println("ERROR! Error inesperado!");
+        }
+// EJERCICIO 9
+    System.err.println(ut.GREEN_BOLD + "EJERCICIO 9" + ut.RESET);
+    System.err.println("""
+            Realiza un programa que resuelva una ecuación de segundo grado 
+            (del tipo ax2 + bx + c = 0).
+            """);
+        try {
+            System.err.println("Por favor, introduzca los valores.");  
+            double a = s.nextDouble();
+            double b = s.nextDouble();
+            double c = s.nextDouble();
+            System.err.printf("");
+        } catch (NumberFormatException e) {
+            System.err.println("Número incorrecto");
+        }
+
 
     }
 }

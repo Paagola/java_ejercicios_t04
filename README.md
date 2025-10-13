@@ -106,3 +106,89 @@ Escribe un programa en que dado un número del 1 a 7 escriba el correspondiente 
 > Por favor, introduce el número del 1 al 7: 6
 >
 > sábado
+
+<br>
+
+---
+
+<br>
+
+## EJERCICIO 5
+
+Realiza un programa que resuelva una ecuación de primer grado (del tipo ax + b = 0).
+
+### `Ejemplo 1`
+
+> Este programa resuelve ecuaciones de primer grado del tipo ax + b = 0
+>
+> Por favor introduzca el valor de a: 2
+> Por favor, introduzca el valor de b: 1
+> x = -0.5
+
+### `Ejemplo 2`
+
+> Este programa resuelve ecuaciones de primer grado del tipo ax + b = 0
+>
+> Por favor introduzca el valor de a: 0
+> Por favor, introduzca el valor de b: 7
+> x = -0.5
+
+
+Realiza un programa que calcule el tiempo que tardará en caer un objeto desde una altura h. Aplica la fórmula t = √2hg siendo g = 9.81m/s2
+
+### `Ejemplo 1`
+
+> Cálculo del tiempo de caíde de un objeto.
+>
+> Por favor, introduzca la altura (en metro) desde la que cae el objeto: 5
+> 
+> El objeto tarda 1.01 segundos en caer.
+
+### `Ejemplo 2`
+
+> Cálculo del tiempo de caíde de un objeto.
+>
+> Por favor, introduzca la altura (en metro) desde la que cae el objeto: 30
+> 
+> El objeto tarda 2.47 segundos en caer.
+
+<br>
+
+---
+
+<br>
+
+## EJERCICIO 9
+
+Realiza un programa que resuelva una ecuación de segundo grado (del tipo ax2 + bx + c = 0).
+
+### `Ejemplo 1`
+
+> Este programa resuelve ecuaciones de segundo grado.
+>
+> ax^2 + bx + c = 0
+> 
+> Por favor, introduzca los valores
+>
+> a = 0
+> 
+> b = 0
+> 
+> c = 0
+>
+> La ecuación tiene infinitas soluciones.
+
+### `Ejemplo 2`
+
+> Este programa resuelve ecuaciones de segundo grado.
+>
+> ax^2 + bx + c = 0
+> 
+> Por favor, introduzca los valores
+>
+> a = 0
+> 
+> b = 0
+> 
+> c = 2
+> 
