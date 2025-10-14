@@ -192,3 +192,12 @@ Realiza un programa que resuelva una ecuación de segundo grado (del tipo ax2 + 
 > 
 > c = 2
 > 
+
+<br>
+
+---
+
+<br>
+
+## EJERCICIO 10
+
