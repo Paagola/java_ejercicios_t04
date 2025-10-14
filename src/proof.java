@@ -3,27 +3,34 @@ import java.util.Scanner;
 public class proof {
     public static void main(String[] args) {
         
+        // EJERCICIO 11
+        System.err.println(ut.GREEN_BOLD + "EJERCICIO 11" + ut.RESET);
+        System.err.println("""
+                Escribe un programa que dada una hora determinada (horas y minutos), 
+                calcule los  segundos que faltan para llegar a la medianoche.
+                """);
+            try {
+            Scanner s = new Scanner(System.in);
+            System.err.println("A continuación deberá introducir una hora del día, primero introducirá la hora y luego los minutos.");  
+            System.err.print("Hora: ");
+            int hora = s.nextInt();
+            System.err.print("Minutos: ");
+            int mins = s.nextInt();
+            int segundos_día = (24 * 60) * 60;
+
+            if (hora > 23 || mins > 59) {
+                System.err.println("Introduce un rango de horas adecuado");
+            } else {
+                int segundos_dia_recorrido = (hora * 60 + mins) * 60;
+                System.err.printf("Desde las %d:%d hasta la medianoche faltan %d segundos", hora, mins, segundos_día - segundos_dia_recorrido);
+            }
+            } 
+            
+            catch (NumberFormatException e) {
+                System.err.println("ERROR! INTRODUZCA UN NÚMERO");
+            } catch (Exception e) {
+                System.err.println("ERROR INESPERADO!");
+            }
     
-    // EJERCICIO 9
-    System.err.println(ut.GREEN_BOLD + "EJERCICIO 9" + ut.RESET);
-    System.err.println("""
-            Realiza un programa que resuelva una ecuación de segundo grado 
-            (del tipo ax2 + bx + c = 0).
-            """);
-        Scanner s = new Scanner(System.in);
-        System.err.println("Por favor, introduzca los valores.");  
-        double a = s.nextDouble();
-        double b = s.nextDouble();
-        double c = s.nextDouble();
-        double discriminante = Math.pow(b, 2) - 4*a*c;
-        
-        if (discriminante < 0) {
-            System.err.println("No hay soluciones reales.");
-        } else if (discriminante > 0) {
-            System.err.printf("x1 = %f%nx2 = %f", (-b + Math.sqrt(discriminante))/(2*a), (-b - Math.sqrt(discriminante))/(2*a) );
-        } else if (discriminante == 0) {
-            System.err.printf("x = %f", -b / (2*a));
-        } else 
-        System.err.printf("");
     }
 }
