@@ -199,5 +199,26 @@ Realiza un programa que resuelva una ecuación de segundo grado (del tipo ax2 + 
 
 <br>
 
-## EJERCICIO 10
+## EJERCICIO 11
 
+Escribe un programa que dada una hora determinada (horas y minutos), calcule los  segundos que faltan para llegar a la medianoche.
+
+### `EJEMPLO 1`
+
+> A continuación deberá introducir una hora del día, primero introducirá la hora y luego los minutos.
+>
+> hora: 20
+>
+> minuto: 30
+>
+> Desde las 20:30 hasta la medianoche faltan 12600 segundos.
+
+### `EJEMPLO 2`
+
+> A continuación deberá introducir una hora del día, primero introducirá la hora y luego los minutos.
+>
+> hora: 5
+>
+> minuto: 0
+> 
+> Desde las 05:00 hasta la medianoche faltan 68400 segundos.

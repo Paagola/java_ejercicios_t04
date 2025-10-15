@@ -6,31 +6,35 @@ public class proof {
         // EJERCICIO 11
         System.err.println(ut.GREEN_BOLD + "EJERCICIO 11" + ut.RESET);
         System.err.println("""
-                Escribe un programa que dada una hora determinada (horas y minutos), 
-                calcule los  segundos que faltan para llegar a la medianoche.
+                Escribe un programa que ordene tres números enteros introducidos por teclado.
                 """);
-            try {
             Scanner s = new Scanner(System.in);
-            System.err.println("A continuación deberá introducir una hora del día, primero introducirá la hora y luego los minutos.");  
-            System.err.print("Hora: ");
-            int hora = s.nextInt();
-            System.err.print("Minutos: ");
-            int mins = s.nextInt();
-            int segundos_día = (24 * 60) * 60;
+            System.err.println("Este programa ordena tres números introducidos por teclado.");
+            System.err.println("Por favor, vaya introduciendo los tres números y pulsando INTRO: ");
+            try {
+            System.err.print("-> ");
+            int num1 = s.nextInt();
+            System.err.print("-> ");
+            int num2 = s.nextInt();
+            System.err.print("-> ");
+            int num3 = s.nextInt();
 
-            if (hora > 23 || mins > 59) {
-                System.err.println("Introduce un rango de horas adecuado");
-            } else {
-                int segundos_dia_recorrido = (hora * 60 + mins) * 60;
-                System.err.printf("Desde las %d:%d hasta la medianoche faltan %d segundos", hora, mins, segundos_día - segundos_dia_recorrido);
-            }
-            } 
-            
-            catch (NumberFormatException e) {
-                System.err.println("ERROR! INTRODUZCA UN NÚMERO");
+            if (num1 < num2 && num1 < num3)
+                if (num1 < num2 && num2 < num3 )
+                    System.err.printf("Los números introducidos ordenados de mayor a menos son %d, %d y %d.", num1, num2, num3);
+                else System.err.printf("Los números introducidos ordenados de mayor a menos son %d, %d y %d.", num1, num3, num2);
+            else if (num2 < num1 && num2 < num3)
+                if (num2 < num1 && num1 < num3)
+                    System.err.printf("Los números introducidos ordenados de mayor a menos son %d, %d y %d.", num2, num1, num3);
+                else System.err.printf("Los números introducidos ordenados de mayor a menos son %d, %d y %d.", num2, num3, num1);
+            else if (num3 < num2 && num3 < num1)
+                if (num3 < num2 && num2 < num1)
+                System.err.printf("Los números introducidos ordenados de mayor a menos son %d, %d y %d.", num3, num2, num1);
+                else System.err.printf("Los números introducidos ordenados de mayor a menos son %d, %d y %d.", num3, num1, num2);
+            } catch (NumberFormatException e) {
+                System.err.println("ERROR! INTRODUCE UN NÚMERP");
             } catch (Exception e) {
-                System.err.println("ERROR INESPERADO!");
+                System.err.println("ERROR INESPERADO");
             }
-    
     }
 }
