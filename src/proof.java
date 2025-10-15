@@ -32,9 +32,5 @@ public class proof {
                 System.err.println("ERROR INESPERADO!");
             }
     
-<<<<<<< HEAD
-        
-=======
->>>>>>> c87d7778bcccc16496bc4629f0ad650ba6d81aa2
     }
 }
