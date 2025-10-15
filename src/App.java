@@ -103,7 +103,6 @@ public class App {
         } catch (Exception e) {
             System.err.println("Error inesperado!");
         }
-        System.err.printf("%n");
 
         // EJERCICIO 6
         System.err.println(ut.GREEN_BOLD + "EJERCICIO 6" + ut.RESET);
@@ -123,38 +122,37 @@ public class App {
         } catch (Exception e) {
             System.err.println("ERROR! Error inesperado!");
         }
-
-        System.err.printf("%n%n");
-
         s.close();
-
         // EJERCICIO 9
         System.err.println(ut.GREEN_BOLD + "EJERCICIO 9" + ut.RESET);
         System.err.println("""
                 Realiza un programa que resuelva una ecuación de segundo grado
                 (del tipo ax2 + bx + c = 0).
                 """);
-
         System.err.println("Por favor, introduzca los valores.");
         System.err.print("a = ");
-        double a = s.nextDouble();
-        System.err.print("b = ");
-        double b = s.nextDouble();
-        System.err.print("c = ");
-        double c = s.nextDouble();
-        double discriminante = Math.pow(b, 2) - 4 * a * c;
+        try {
+            double a = s.nextDouble();
+            System.err.print("b = ");
+            double b = s.nextDouble();
+            System.err.print("c = ");
+            double c = s.nextDouble();
+            double discriminante = Math.pow(b, 2) - 4 * a * c;
 
-        if (Double.isNaN(discriminante)) {
-            System.err.println("El número es nulo");
-        } else if (discriminante < 0) {
-            System.err.println("No hay soluciones reales.");
-        } else if (discriminante > 0) {
-            System.err.printf("x1 = %f%nx2 = %f", (-b + Math.sqrt(discriminante)) / (2 * a),
-                    (-b - Math.sqrt(discriminante)) / (2 * a));
-        } else if (discriminante == 0) {
-            System.err.printf("x = %f", -b / (2 * a));
-        } else
-            System.err.printf("");
+            if (Double.isNaN(discriminante)) {
+                System.err.println("No hay soluciones reales.");
+            } else if (discriminante > 0) {
+                System.err.printf("x1 = %f%nx2 = %f", (-b + Math.sqrt(discriminante)) / (2 * a),
+                        (-b - Math.sqrt(discriminante)) / (2 * a));
+            } else if (discriminante == 0) {
+                System.err.printf("x = %f", -b / (2 * a));
+            } else
+                System.err.printf("No hay soluciones reales");
+        } catch (NumberFormatException e) {
+            System.err.println("ERROR! INTRODUCE UN NÚMERO");
+        } catch (Exception e) {
+            System.err.println("ERROR INESPERADO");
+        }
 
         // EJERCICIO 11
         System.err.println(ut.GREEN_BOLD + "EJERCICIO 11" + ut.RESET);
@@ -163,7 +161,6 @@ public class App {
                 calcule los  segundos que faltan para llegar a la medianoche.
                 """);
         try {
-
             System.err.println(
                     "A continuación deberá introducir una hora del día, primero introducirá la hora y luego los minutos.");
             System.err.print("Hora: ");
@@ -187,5 +184,99 @@ public class App {
             System.err.println("ERROR INESPERADO!");
         }
 
+        // EJERCICIO 13
+        System.err.println(ut.GREEN_BOLD + "EJERCICIO 13" + ut.RESET);
+        System.err.println("""
+                Escribe un programa que ordene tres números enteros introducidos por teclado.
+                """);
+        System.err.println("Este programa ordena tres números introducidos por teclado.");
+        System.err.println("Por favor, vaya introduciendo los tres números y pulsando INTRO: ");
+        try {
+            System.err.print("-> ");
+            int num1 = s.nextInt();
+            System.err.print("-> ");
+            int num2 = s.nextInt();
+            System.err.print("-> ");
+            int num3 = s.nextInt();
+
+            if (num1 < num2 && num1 < num3)
+                if (num1 < num2 && num2 < num3)
+                    System.err.printf("Los números introducidos ordenados de mayor a menos son %d, %d y %d.", num1,
+                            num2, num3);
+                else
+                    System.err.printf("Los números introducidos ordenados de mayor a menos son %d, %d y %d.", num1,
+                            num3, num2);
+            else if (num2 < num1 && num2 < num3)
+                if (num2 < num1 && num1 < num3)
+                    System.err.printf("Los números introducidos ordenados de mayor a menos son %d, %d y %d.", num2,
+                            num1, num3);
+                else
+                    System.err.printf("Los números introducidos ordenados de mayor a menos son %d, %d y %d.", num2,
+                            num3, num1);
+            else if (num3 < num2 && num3 < num1)
+                if (num3 < num2 && num2 < num1)
+                    System.err.printf("Los números introducidos ordenados de mayor a menos son %d, %d y %d.", num3,
+                            num2, num1);
+                else
+                    System.err.printf("Los números introducidos ordenados de mayor a menos son %d, %d y %d.", num3,
+                            num1, num2);
+        } catch (NumberFormatException e) {
+            System.err.println("ERROR! INTRODUCE UN NÚMERP");
+        } catch (Exception e) {
+            System.err.println("ERROR INESPERADO");
+        }
+
+
+        // EJERCICIO 17
+        System.err.println(ut.GREEN_BOLD + "EJERCICIO 17" + ut.RESET);
+        System.err.println("""
+                Escribe un programa que diga cuál es la última cifra de un número entero introducido por teclado.
+
+                 """);
+        System.err.println(
+                "Escribe un programa que diga cuál es la última cifra de un número entero introducido por teclado.");
+        System.err.print("Por favor, introduzca un número entero: ");
+        try {
+            int numero = s.nextInt();
+            System.err.println("La ultima cifra del número introducido es " + numero % 10);
+        } catch (NumberFormatException e) {
+            System.err.println("ERROR! INTRODUCE UN NÚMERO");
+        } catch (Exception e) {
+            System.err.println("ERROR INESPERADO");
+        }
+
+
+        // EJERCICIO 18
+        System.err.println(ut.GREEN_BOLD + "EJERCICIO 18" + ut.RESET);
+        System.err.println("""
+                Escribe un programa que diga cuál es la última cifra de un número entero introducido por teclado.
+
+                 """);
+        System.err.println(
+                "Escribe un programa que diga cuál es la primera cifra de un número entero positivo introducido por teclado. Se permiten números de hasta 5 cifras.");
+        System.err.println("Por favor, introduzca un número entero positivo (de 5 cifras como máximo): ");
+        try {
+            int numero = s.nextInt();
+
+            if (numero < 10)
+                System.err.println("La primera cifra del número introducido es el: " + numero);
+            else if (numero < 100)
+                System.err.println("La primera cifra del número introducido es el: " + (int) Math.floor(numero / 10));
+            else if (numero < 1000)
+                System.err.println("La primera cifra del número introducido es el: " + (int) Math.floor(numero / 100));
+            else if (numero < 10000)
+                System.err.println("La primera cifra del número introducido es el: " + (int) Math.floor(numero / 1000));
+            else if (numero < 100000)
+                System.err
+                        .println("La primera cifra del número introducido es el: " + (int) Math.floor(numero / 10000));
+            else
+                System.err.println("No puedes introducir un número de 6 cifras");
+
+        } catch (NumberFormatException e) {
+            System.err.println("ERROR! INTRODUCE UN NÚMERO");
+        } catch (Exception e) {
+            System.err.println("ERROR INESPERADO");
+        }
+        s.close();
     }
 }

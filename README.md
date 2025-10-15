@@ -222,3 +222,151 @@ Escribe un programa que dada una hora determinada (horas y minutos), calcule los
 > minuto: 0
 > 
 > Desde las 05:00 hasta la medianoche faltan 68400 segundos.
+
+<br>
+
+---
+
+<br>
+
+## EJERCICIO 13
+
+Escribe un programa que ordene tres números enteros introducidos por teclado.
+
+### `EJEMPLO 1`
+
+> Este programa ordena tres números introducidos por teclado.
+>
+> Por favor, vaya introduciendo los tres números y pulsando INTRO:
+>
+> 20
+>
+> 50
+>
+> 30
+> 
+> Los números introducidos ordenados de menor a mayor son 20, 30 y 50.
+
+### `EJEMPLO 2`
+
+> Este programa ordena tres números introducidos por teclado.
+>
+> Por favor, vaya introduciendo los tres números y pulsando INTRO:
+>
+> 1
+>
+> 2
+>
+> 3
+> 
+> Los números introducidos ordenados de menor a mayor son 1, 2 y 3.
+
+### `EJEMPLO 3`
+
+> Este programa ordena tres números introducidos por teclado.
+>
+> Por favor, vaya introduciendo los tres números y pulsando INTRO:
+>
+> 55
+>
+> -33
+>
+> -100
+> 
+> Los números introducidos ordenados de menor a mayor son -100, -33 y -55.
+
+<br>
+
+---
+
+<br>
+
+## EJERCICIO 17
+
+Escribe un programa que diga cuál es la última cifra de un número entero introducido por teclado.
+
+### `EJEMPLO 1`
+
+> Por favor, introduzca un número entero: 1972
+>
+> La última cifra del número introducido es el 2
+
+### `EJEMPLO 3`
+
+> Por favor, introduzca un número entero: 8
+>
+> La última cifra del número introducido es el 8
+
+### `EJEMPLO 1`
+
+> Por favor, introduzca un número entero: 0
+>
+> La última cifra del número introducido es el 0
+
+<br>
+
+---
+
+<br>
+
+## EJERCICIO 18
+
+Escribe un programa que diga cuál es la primera cifra de un número entero positivo introducido por teclado. Se permiten números de hasta 5 cifras.
+
+### `EJEMPLO 1`
+
+> Por favor, introduzca un número entero positivo (de 5 cifras como máximo): 42
+>
+> La primera cifra del número introducido es el 4.
+
+### `EJEMPLO 2`
+
+> Por favor, introduzca un número entero positivo (de 5 cifras como máximo): 1000
+>
+> La primera cifra del número introducido es el 4.
+
+### `EJEMPLO 3`
+
+> Por favor, introduzca un número entero positivo (de 5 cifras como máximo): 0
+>
+> La primera cifra del número introducido es el 0.
+
+### `EJEMPLO 4`
+
+> Por favor, introduzca un número entero positivo (de 5 cifras como máximo): 90721
+>
+> La primera cifra del número introducido es el 9.
+
+<br>
+
+---
+
+<br>
+
+## EJERCICIO 19
+
+Realiza un programa que nos diga cuántos dígitos tiene un número entero que puede ser positivo o negativo. Se permiten números de hasta 5 dígitos.
+
+### `EJEMPLO 1`
+
+> Por favor, introduzca un número entero (5 cifras como máximo): 811
+>
+> El número introducido tiene 3 dígitos.
+
+### `EJEMPLO 2`
+
+> Por favor, introduzca un número entero (5 cifras como máximo): 29
+>
+> El número introducido tiene 2 dígitos.
+
+### `EJEMPLO 3`
+
+> Por favor, introduzca un número entero (5 cifras como máximo): -501
+>
+> El número introducido tiene 3 dígitos.
+
+### `EJEMPLO 4`
+
+> Por favor, introduzca un número entero (5 cifras como máximo): 0
+>
+> El número introducido tiene 1 dígito.
