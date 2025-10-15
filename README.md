@@ -370,3 +370,109 @@ Realiza un programa que nos diga cuántos dígitos tiene un número entero que p
 > Por favor, introduzca un número entero (5 cifras como máximo): 0
 >
 > El número introducido tiene 1 dígito.
+
+<br>
+
+---
+
+<br>
+
+## EJERCICIO 20
+
+Realiza un programa que diga si un número entero positivo introducido por teclado es capicúa. Se permiten
+números de hasta 5 cifras.
+
+### `EJEMPLO 1`
+
+> Por favor, introduzca un número entero (de 5 cifras como máximo): 
+>
+> 234
+> 
+> El número introducido no es capicúa.
+
+### `EJEMPLO 2`
+
+> Por favor, introduzca un número entero (de 5 cifras como máximo): 
+>
+> 232
+> 
+> El número introducido es capicúa.
+
+### `EJEMPLO 3`
+
+> Por favor, introduzca un número entero (de 5 cifras como máximo): 
+>
+> 22
+> 
+> El número introducido es capicúa.
+
+### `EJEMPLO 4`
+
+> Por favor, introduzca un número entero (de 5 cifras como máximo): 
+>
+> 12
+> 
+> El número introducido no es capicúa.
+
+### `EJEMPLO 5`
+
+> Por favor, introduzca un número entero (de 5 cifras como máximo): 
+>
+> 7
+> 
+> El número introducido es capicúa.
+
+### `EJEMPLO 6`
+
+> Por favor, introduzca un número entero (de 5 cifras como máximo): 
+>
+> 98789
+> 
+> El número introducido es capicúa.
+
+<br>
+
+---
+
+<br>
+
+## EJERCICIO 22
+
+Realiza un programa que, dado un día de la semana (de lunes a viernes) y una hora (horas y minutos), calcule cuántos minutos faltan para el fin de semana. Se considerará que el fin de semana comienza el viernes a las 15:00h. Se da por hecho que el usuario introducirá un día y hora correctos, anterior al viernes a las 15:00h.
+
+### `EJEMPLO 1`
+
+> Por favor, introduzca un día de la semana (de lunes a viernes): jueves
+>
+> A continuación introduzca la hora (hora y minutos)
+> 
+> Hora: 15
+> 
+> Minutos: 0
+> 
+> Faltan 1440 minutos para llegar al fin de semana.
+
+### `EJEMPLO 2`
+
+> Por favor, introduzca un día de la semana (de lunes a viernes): lunes
+>
+> A continuación introduzca la hora (hora y minutos)
+> 
+> Hora: 10
+> 
+> Minutos: 15
+> 
+> Faltan 6045 minutos para llegar al fin de semana.
+
+### `EJEMPLO 3`
+
+> Por favor, introduzca un día de la semana (de lunes a viernes): viernes
+>
+> A continuación introduzca la hora (hora y minutos)
+> 
+> Hora: 14
+> 
+> Minutos: 50
+> 
+> Faltan 10 minutos para llegar al fin de semana.
+

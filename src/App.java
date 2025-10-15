@@ -277,6 +277,63 @@ public class App {
         } catch (Exception e) {
             System.err.println("ERROR INESPERADO");
         }
-        s.close();
+
+
+                
+// EJERCICIO 19
+        System.err.println(ut.GREEN_BOLD + "EJERCICIO 19" + ut.RESET);
+        System.err.println("""
+               Realiza un programa que nos diga cuántos dígitos tiene un número entero que puede ser positivo o negativo. 
+               Se permiten números de hasta 5 dígitos.
+                """);
+            System.err.print("Por favor, introduzca un número entero (5 cifras como máximo): ");
+            try {
+                int numero = s.nextInt();
+                if (numero < 10 && numero > -10)
+                    System.err.println("El número tiene 1 dígito");
+                else if (numero < 100 && numero > -100)
+                    System.err.println("El número tiene 2 dígitos");
+                else if (numero < 1000 && numero > -1000)
+                    System.err.println("El número tiene 3 dígitos");
+                else if (numero < 10000 && numero > -10000)
+                    System.err.println("El número tiene 4 dígitos");
+                else if (numero < 100000 && numero > -100000)
+                    System.err.println("El número tiene 5 dígitos");
+                else System.err.println("Has introducido un númeor mayor a 5 cifras");
+            } catch (NumberFormatException e) {
+                System.err.println("ERROR! INTRODUCE UN NÚMERO");
+            } catch (Exception e) {
+                System.err.println("ERROR INESPERADO");
+            }
+
+
+// EJERCICIO 20
+        System.err.println(ut.GREEN_BOLD + "EJERCICIO 20" + ut.RESET);
+        System.err.println("""
+               Realiza un programa que diga si un número entero positivo introducido por teclado es capicúa. Se permiten
+                números de hasta 5 cifras.
+
+                """);
+            System.err.print("Por favor, introduzca un número entero (de 5 cifras como máximo): ");
+            try {
+                int capicua = s.nextInt();
+                if (capicua < 10) 
+                    System.err.printf("El número %d es capicúa.", capicua);
+                else if (capicua < 100) {
+                    System.err.printf("El número %d %s es capicúa", capicua, (capicua % 10) == Math.floor(capicua / 10) ? "si" : "no");
+                }
+                else if (capicua < 1000)
+                    System.err.printf("EL número %d %s es capicúa", capicua, (capicua % 100) == Math.floor(capicua / 100) ? "si" : "no");
+                else if (capicua < 10000) {
+                    int a = capicua / 1000; int b = (capicua / 100 ) % 10; int c = (capicua / 10) % 10; int d = capicua % 10;
+                    System.err.printf("El número %d %s capicúa.", capicua, ((a == d) && (b == c)) ? "si" : "no");
+                } else System.err.println("No puedes introducir un número de más de 5 dígitos!!");
+                
+            } catch (NumberFormatException e) {
+                System.err.println("ERROR! INTRODUCE UN NÚMERO");
+            } catch (Exception e) {
+                System.err.println("ERROR INESPERADO");
+            }
+
     }
 }
