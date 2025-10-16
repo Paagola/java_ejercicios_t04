@@ -507,15 +507,16 @@ hay que restarle el IRPF, que será de un 25% en caso de estar soltero y un 20% 
 >
 > Introduzca su estado civil (1 - Soltero, 2 - Casado): 2
 >
-----------------------------------
-| Sueldo base 1200,00            |
-| Dietas ( 5 viajes) 150,00      |
-|--------------------------------|
-| Sueldo bruto 1350,00           |
-| Retención IRPF (20%) 270,00    |
-|--------------------------------|
-| Sueldo neto 1080,00            |
-----------------------------------
+> |           SUELDO               |
+> |--------------------------------|
+> | Sueldo base 1200,00            |
+> | Dietas ( 5 viajes): 150,00      |
+> |--------------------------------|
+> | Sueldo bruto 1350,00           |
+> | Retención IRPF (20%) 270,00    |
+> |--------------------------------|
+> | Sueldo neto 1080,00            |
+> ----------------------------------
 
 ### `EJEMPLO 2`
 
@@ -531,12 +532,13 @@ hay que restarle el IRPF, que será de un 25% en caso de estar soltero y un 20% 
 >
 > Introduzca su estado civil (1 - Soltero, 2 - Casado): 1
 >
-----------------------------------
-| Sueldo base 1600,00            |
-| Dietas ( 8 viajes) 240,00      |
-|--------------------------------|
-| Sueldo bruto 1840,00           |
-| Retención IRPF (25%) 460,00    |
-|--------------------------------|
-| Sueldo neto 1380,00            |
-----------------------------------
+> |           SUELDO               |
+> |--------------------------------|
+> | Sueldo base 1600,00            |
+> | Dietas ( 8 viajes) 240,00      |
+> |--------------------------------|
+> | Sueldo bruto 1840,00           |
+> | Retención IRPF (25%) 460,00    |
+> |--------------------------------|
+> | Sueldo neto 1380,00            |
+> ----------------------------------
