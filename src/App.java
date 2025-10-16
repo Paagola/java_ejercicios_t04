@@ -126,7 +126,7 @@ public class App {
                 } catch (Exception e) {
                     System.err.println("Error inesperado!");
                 }
-                System.out.println();
+                break;
 
             case 5: // EJERCICIO 6
                 System.err.println(ut.GREEN_BOLD + "EJERCICIO 6" + ut.RESET);
